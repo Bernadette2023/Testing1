@@ -170,7 +170,7 @@ def update_output_div(input_value):
 
 @app.callback(
     Output(component_id='image', component_property='src'),
-    Input('my-output', 'children'))
+    Input('my-output', 'value'))
 def update_image(city):
     if city == 'Rome, Italy':
         city_img = rome_wordcloud
